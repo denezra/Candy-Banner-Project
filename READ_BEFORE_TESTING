@@ -1,0 +1,30 @@
+Step 1:
+	Look for this file
+
+	This is for Windows
+
+	 -> C:\Windows\System32\drivers\etc\hosts
+
+	 -> C:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+Step 2:
+	Follow this line of code inside httpd-vhosts.conf
+
+	##<VirtualHost *:80>
+	##	DocumentRoot "C:\Users\Den\Documents\GitHub\jstraining\Tutorials\boilerplate\api\content"
+	##	ServerName fscheck.dev
+	##	<Directory "C:\Users\Den\Documents\GitHub\jstraining\Tutorials\boilerplate\api\content">
+	##		Order allow,deny
+	##		Allow from all
+	##		Require all granted
+	##	</Directory>
+	##</VirtualHost>
+
+	After, implementing the codes in httpd-vhosts.conf implement the server name in hosts
+
+	#127.0.0.1       fscheck.dev
+
+
+
+NOTE: You need to be admin to be able to edit the hosts file
+
