@@ -94,7 +94,7 @@ $(function()
             error: function(jqXHR, textStatus, errorThrown)
             {
                 // Handle errors here
-                console.log('ERRORS: ' + textStatus);
+                console.log('ERRORS: ' + textStatus + ' ' + errorThrown);
             },
             complete: function()
             {

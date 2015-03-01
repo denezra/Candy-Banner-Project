@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/index-style.css">
 </head>
 <body>
+	<?php include 'submit.php';?>
 	<!--========================HEADER PART================================-->
 	<div class="header container">
 		<div class="row">
@@ -23,21 +24,33 @@
 	<div class="body container">
 		<div class="row">
 		<!-- BEGIN: Upload Function -->
-			<form action="#" enctype="multipart/form-data" method="post">
-				<ul>
-					<li>
-						<label for="name">Name:</label>
-						<input type="text" name="name" id="name" multiple>
-					</li>
+			<div class="upload-form" id="uploader">
+			    <!-- Form Heading -->
+			    <h1 class="replace-text">Upload Form</h1>
+			    <a href="#" class="close" title="Close Window"><img src="img/close-button.png" alt="Close"></a>
 
-					<li>
-						<label for="file_upload">File:</label>
-						<input type="file" name="file_upload" id="file_upload" multiple>
-					</li>
+			    <p>Laos, alongside many of its Southeast Asian neighbours, is well known for producing.</p>
 
-					<li><input class="button green" type="submit" name="submit" value="Submit Content"></li>
-				</ul>
-			</form>
+			    <!-- Select & Upload Button -->
+			    <div>
+			        <a class="button" id="pickfiles" href="#">Select</a>
+			        <a class="button" id="uploadfiles" href="#">Upload</a>
+			    </div>
+
+			    <!-- File List -->
+			    <div id="filelist" class="cb"></div>
+
+			    <!-- Progress Bar -->
+			    <div id="progressbar"></div>
+
+			    <!-- Close After Upload -->
+			    <div id="closeAfter">
+			        <span class="checkbox">
+			            <input type="checkbox" name="checkbox" id="checkbox">
+			            <label for="checkbox">Close window after upload</label>
+			        </span>
+			    </div>
+			</div>
       <!-- END: Upload Function -->
 		</div>
 	</div>
